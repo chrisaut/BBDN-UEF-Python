@@ -40,7 +40,7 @@ stages:
 
     - script: |
         cp ConfigTemplate.py Config.py
-        echo "Werkzeug==1.0.1" >> requirements.txt
+        echo "\nWerkzeug==1.0.1" >> requirements.txt
         python -m venv antenv
         source antenv/bin/activate
         python -m pip install --upgrade pip
