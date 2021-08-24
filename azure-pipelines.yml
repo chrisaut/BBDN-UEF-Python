@@ -39,8 +39,6 @@ stages:
       displayName: 'Use Python $(pythonVersion)'
 
     - script: |
-        cp ConfigTemplate.py Config.py
-        echo "\nWerkzeug==1.0.1" >> requirements.txt
         python -m venv antenv
         source antenv/bin/activate
         python -m pip install --upgrade pip
